@@ -13,6 +13,28 @@ PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIG
 HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. -->
+# Noah for Shortcutter's Coding Challenge backend
+
+## URL Shortener
+Develop a service that lets users create short URLs (like Bitly, Rebrandly, etc.) for their original links.
+
+Consider this as MVP that is ready for deployment, but try to keep in mind future maintenance and improvements.
+Don't spend too much time on perfecting it, as long as you can discuss the choices you made, what parts could be improved, etc.
+
+## Functional requirements
+
+- Service should let users register a new account and authenticate themselves.
+- Service should let authenticated users create shortened URLs.
+- Service should let any user use shortened URLs (e.g., follow redirects to original URLs).
+
+## Technical requirements
+
+- Service has to serve requests over HTTP API.
+- We don't expect UI for this task.
+- User registration could be very simple with just a login(email) and password.
+- You can use any tech solution for storing data but consider that your project has to be easy to launch. For example, if you use any DB consider including deploy scripts or containerization scripts.
+- The same rule for dependencies and libraries. If you use packages that other people are unlikely to have, consider including deploy or containerization scripts.
+
 
 # Functionless URL Shortener
 This app creates a URL shortener without using any compute. All business logic is handled at the Amazon API Gateway level. The basic app will create an API Gateway instance utilizing Cognito for authentication and authorization. It will also create an Amazon DynamoDB table for data storage. It will also create a simple Vuejs application as a demo client.
